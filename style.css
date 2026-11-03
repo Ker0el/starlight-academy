@@ -581,29 +581,60 @@ position:absolute;
 inset:0;
 
 
+overflow:hidden;
+
+
+background:
+#050608
+url("https://t.alcy.cc/ycy")
+center/
+cover
+no-repeat;
+
+
+}
+
+
+.hero-bg::after{
+
+
+content:"";
+
+
+position:absolute;
+
+
+inset:0;
+
+
+pointer-events:none;
 
 
 background:
 
 
 linear-gradient(
-
-to bottom,
-
-rgba(0,0,0,.15),
-
-#050608
-
+120deg,
+rgba(198,161,91,.12),
+transparent 45%,
+rgba(90,120,255,.10)
 ),
 
 
+linear-gradient(
+to bottom,
+rgba(5,6,8,.82) 0%,
+rgba(5,6,8,.62) 38%,
+rgba(5,6,8,.90) 100%
+),
 
-url("assets/hero.jpg")
 
-center/
-
-cover;
-
+radial-gradient(
+ellipse at 50% 45%,
+rgba(5,6,8,.62) 0%,
+rgba(5,6,8,.28) 45%,
+rgba(5,6,8,0) 72%
+);
 
 
 }
@@ -745,6 +776,10 @@ color:#c6a15b;
 margin-bottom:40px;
 
 
+text-shadow:
+0 2px 18px rgba(5,6,8,.9);
+
+
 }
 
 
@@ -753,24 +788,34 @@ margin-bottom:40px;
 
 
 .hero-content h1{
-
-
 font-size:110px;
-
-
 font-weight:700;
-
-
 letter-spacing:25px;
-
-
-
 text-shadow:
-
-
-0 0 60px rgba(255,220,150,.35);
-
-
+0 0 18px rgba(255,226,170,.55),
+0 0 46px rgba(255,206,120,.40),
+0 0 100px rgba(255,190,90,.30),
+0 6px 40px rgba(5,6,8,.85);
+animation:titleGlow 7s ease-in-out infinite;
+}
+@keyframes titleGlow{
+0%,100%{
+text-shadow:
+0 0 18px rgba(255,226,170,.45),
+0 0 46px rgba(255,206,120,.30),
+0 0 100px rgba(255,190,90,.22),
+0 6px 40px rgba(5,6,8,.85);
+}
+50%{
+text-shadow:
+0 0 26px rgba(255,232,185,.70),
+0 0 72px rgba(255,208,125,.52),
+0 0 145px rgba(255,190,90,.40),
+0 6px 40px rgba(5,6,8,.85);
+}
+}
+@media(prefers-reduced-motion:reduce){
+.hero-content h1{animation:none;}
 }
 
 
@@ -786,6 +831,10 @@ font-size:32px;
 
 
 letter-spacing:15px;
+
+
+text-shadow:
+0 3px 24px rgba(5,6,8,.95);
 
 
 }
@@ -813,6 +862,10 @@ letter-spacing:10px;
 
 
 color:#c6a15b;
+
+
+text-shadow:
+0 3px 24px rgba(5,6,8,.95);
 
 
 }
