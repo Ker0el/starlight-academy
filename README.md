@@ -1,4 +1,4 @@
-# 星空游戏学院 · StarLight Game Academy
+# 星空游戏学院 · StarGame Academy
 
 > 星辰之源，创造起点
 
