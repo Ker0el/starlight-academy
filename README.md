@@ -4,7 +4,7 @@
 
 **在线预览：** https://ker0el.github.io/starlight-academy/
 
-游戏设计、游戏美术、游戏开发——一个以「星空」为视觉主题的游戏学院单页官网。
+游戏设计、游戏美术、游戏开发 - 一个个人制作的的游戏学院官网。
 
 ## 特性
 
@@ -18,7 +18,6 @@
 
 - HTML5 / CSS3 / 原生 JavaScript
 - [GSAP 3.12](https://gsap.com/) + ScrollTrigger（CDN 引入）
-- 背景图片接口：[t.alcy.cc/ycy](https://t.alcy.cc/ycy)
 
 ## 目录结构
 
@@ -32,15 +31,7 @@
 └── README.md
 ```
 
-## 本地预览
-
-```bash
-python -m http.server 8123
-```
-
-然后访问 http://127.0.0.1:8123/ 。
-
-也可以直接双击打开 `index.html`，但推荐用本地服务器，避免个别浏览器对本地文件的限制。
+可以直接双击打开 `index.html`。
 
 ## 部署
 
@@ -54,7 +45,7 @@ git push github main
 
 ## 赞赏
 
-如果这个页面对你有帮助，欢迎请我喝杯咖啡 ☕
+如果对你有帮助，欢迎请我喝杯咖啡 ☕
 
 <img src="assets/zs.jpg" alt="赞赏码" width="240">
 
